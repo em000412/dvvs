@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+</head>
+
+<body>
+	<div id="header">
+		<div class="header-container">
+			<div class="header-container__logo">
+				<a class="header-container__logo__link" href="https://dvvs-em000412.web.app/">
+					<img src="./assets/logo.png" alt="Логотип" class="logomain">
+				</a>
+				<a href="#" class="header-container__logo__text">
+					ГСУСУ «Брестский областной центр олимпийского резерва по водным видам спорта»
+				</a>
+			</div>
+			<div class="header-container__controls">
+				<div class="mobile-search-wrapper">
+					<button class="search-icon-button">
+						<span class="search-icon"></span>
+					</button>
+					<form action="/search" method="GET" class="header-container__search__form">
+						<span class="search-icon search-icon-inner"></span>
+						<input
+							type="text"
+							name="q"
+							class="header-container__search__input"
+							placeholder="Поиск"
+						/>
+						<button type="submit" class="header-container__search__submit">
+							<span class="search-icon close-icon"></span>
+						</button>
+					</form>
+				</div>
+				<button class="menu-icon-button">
+					<span class="menu-icon"></span>
+				</button>
+			</div>
+			<div class="header-container__search">
+				<form action="/search" method="GET" class="header-container__search__form--desktop">
+					<input
+						type="text"
+						name="q"
+						class="header-container__search__input"
+						placeholder="Поиск"
+					/>
+					<button type="submit" class="header-container__search__submit">
+						<span class="search-icon"></span>
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<div id="nav" class="mobile-menu" bis_skin_checked="1">
+        <div class="mobile-menu__header" bis_skin_checked="1">
+            <button class="mobile-menu__close-button">
+                <span class="mobile-menu__close-icon"></span>
+            </button>
+        </div>
+        <div class="nav-container" bis_skin_checked="1">
+            <ul class="nav-container__block">
+                <li class="nav-container__block__box activ"></li>
+				<li class="nav-container__block__box">
+					<a class="nav-container__block__link activ" href="https://dvvs-em000412.web.app/" bis_skin_checked="1">Главная</a>
+				  </li>
+				<li class="nav-container__block__box"><a class="nav-container__block__link" href="rules.html" bis_skin_checked="1">Правила</a></li>
+				<li class="nav-container__block__box"><a class="nav-container__block__link" href="/about/" bis_skin_checked="1">О центре</a></li>
+				<li class="nav-container__block__box"><a class="nav-container__block__link" href="/sched/index.php" bis_skin_checked="1">Расписание</a></li>
+				<li class="nav-container__block__box"><a class="nav-container__block__link" href="/contacts/" bis_skin_checked="1">Контакты</a></li>
+				<li class="nav-container__block__box"><a class="nav-container__block__link" href="/sched/price.php" bis_skin_checked="1">Прейскурант</a></li>
+				<li class="nav-container__block__box"><a class="nav-container__block__link" href="http://brest-dvvs.by/services/dopolnitelnye_uslugi/detail.php?SECTION_CODE=Hotel&amp;ELEMENT_CODE=gostinitsa" bis_skin_checked="1">Гостиница</a></li>
+				<li class="nav-container__block__box"><a class="nav-container__block__link" href="http://brest-dvvs.by/services/uslugi_fizicheskoy_kultury/uchebnotrenirovochnye_sbory/" bis_skin_checked="1">УТС</a></li>
+				<li class="nav-container__block__box"><a class="nav-container__block__link" href="http://brest-dvvs.by/zapis/" bis_skin_checked="1">Набор 2025</a></li>
+            </ul>
+            <div class="clear" bis_skin_checked="1"></div>
+        </div>
+        <div class="nav-bottom-shadow" bis_skin_checked="1"></div>
+    </div>
+	
+
+	<div class="main-slider-container">
+		<div class="slider-wrapper">
+			<div class="slider-item" id="slide-0">
+				<div class="slider-content">
+					<div class="slider-text-left">
+						<h2>Услуги «Центра»</h2>
+						<p>Современный стандарт комфорта, индивидуальный подход и огромное количество дополнительных услуг гармонично объединены в Центре олимпийского резерва по водным видам спорта.</p>
+						<p>К Вашим услугам бильярдный клуб «Пирамида», просторный конференц-зал и залы совещаний для проведения переговоров и пресс-конференций, магазин спортивных товаров, современное уютное кафе «Компот», спортивно-исследовательский центр.</p>
+						<p>Ждем Вас у нас в гостях!</p>
+					</div>
+					<div class="slider-links-right services-links">
+						<a href="/services/dopolnitelnye_uslugi/kafe_versal/"><img src="./assets/coffee.png" alt="Кофе"> Кафе Компот</a>
+						<a href="/services/dopolnitelnye_uslugi/predostavlenie_pomeshcheniy/"><img src="./assets/meeting-room.png" alt="Конференц-зал"> Конференц-залы</a>
+						<a href="/services/dopolnitelnye_uslugi/bilyardnyy_kulb_piramida/"><img src="./assets/billiard.png" alt="Бильярд"> Бильярдный клуб Пирамида</a>
+						<a href="/services/dopolnitelnye_uslugi/Hotel/"><img src="./assets/sleeping.png" alt="Отель"> Гостиница Акватель</a>
+						<a href="/services/dopolnitelnye_uslugi/razmeshchenie_reklamy/"><img src="./assets/megaphone.png" alt="Реклама"> Размещение рекламы</a>
+						<a href="/services/dopolnitelnye_uslugi/magazin_sporttovarov/"><img src="./assets/swimming-pool-glasses.png" alt="Магазин"> Магазин спорттоваров</a>
+					</div>
+				</div>
+			</div>
+			<div class="slider-item" id="slide-1">
+				<div class="slider-content">
+					<div class="slider-text-left">
+						<h2 class="slider-text-left h2">Услуги физической культуры</h2>
+						<p>Современный спортивно-оздоровительный мультикомплекс международного уровня предлагает жителям и гостям города Бреста широкий спектр услуг бассейнов для детей и взрослых, великолепно оснащенные тренажерные залы, различные направления фитнеса, спортивный зал для занятий волейболом, восстановительные центры (сауны) и многое другое. Все занятия проходят под наблюдением высококвалифицированных специалистов.</p>
+						<p>СДЕЛАЙТЕ ВЫБОР В ПОЛЬЗУ ВАШЕГО ЗДОРОВЬЯ!</p>
+					</div>
+					<div class="slider-links-right services-links">
+						<a href="/services/uslugi_fizicheskoy_kultury/Akvafitnes/"><img src="./assets/aqua-gym.png" alt="Аква"> Аква</a>
+						<a href="/services/uslugi_fizicheskoy_kultury/basseyn/"><img src="./assets/swimming-pool.png" alt="Бассейны"> Бассейны</a>
+						<a href="/services/uslugi_fizicheskoy_kultury/igrovoy_zal/"><img src="./assets/ball.png" alt="Игровой зал"> Игровой зал</a>
+						<a href="/services/uslugi_fizicheskoy_kultury/organizatsiya_sportivnomassovykh_meropriyatiy/"><img src="./assets/megaphone1.png" alt="Организация спортивно-массовых мероприятий"> Организация спортивно-массовых мероприятий</a>
+						<a href="/services/uslugi_fizicheskoy_kultury/sauna/"><img src="./assets/sauna.png" alt="Сауны"> Сауны</a>
+						<a href="/services/uslugi_fizicheskoy_kultury/trenazhernyy_zal/"><img src="./assets/barbell.png" alt="Тренажерные залы"> Тренажерные залы</a>
+						<a href="/services/uslugi_fizicheskoy_kultury/uchebnotrenirovochnye_sbory/"><img src="./assets/swimmer.png" alt="Учебно-тренировочные сборы"> Учебно-тренировочные сборы</a>
+						<a href="/services/uslugi_fizicheskoy_kultury/fitnes/"><img src="./assets/exercise.png" alt="Фитнес"> Фитнес</a>
+					</div>
+				</div>
+			</div>
+			<div class="slider-item" id="slide-2">
+				<div class="slider-content">
+					<div class="slider-text-left">
+						<h2>Спорт</h2>
+						<p>Спортом должен заниматься каждый и совсем не обязательно ставить перед собой большие спортивные цели, можно заниматься спортом просто для себя, для своего здоровья. Вы можете поставить перед собой цель: стать более сильным и ловким, стройным и привлекательным. И абсолютно не имеет значения пол, ведь это все необходимо как мужчине, так и женщине.</p>
+						<p>Спорт даст здоровье и энергию и будет поддерживать организм в тонусе в течение всего дня.</p>
+					</div>
+					<div class="slider-links-right services-links">
+						<a href="/services/vodnye_vidy_sporta/vodnoe_polo/"><img src="./assets/water-polo.png" alt="Водное поло"> Водное поло</a>
+						<a href="/services/vodnye_vidy_sporta/plany_meropriyatiy/"><img src="./assets/calendar.png" alt="Календарные планы спортивных мероприятий"> Календарные планы спортивных мероприятий</a>
+						<a href="/services/vodnye_vidy_sporta/plavanie/"><img src="./assets/swimmer.png" alt="Плавание"> Плавание</a>
+						<a href="/services/vodnye_vidy_sporta/plavanie_invasport/"><img src="./assets/swimmer.png" alt="Плавание (инваспорт)"> Плавание (инваспорт)</a>
+						<a href="/services/vodnye_vidy_sporta/pryzhki_v_vodu/"><img src="./assets/trampoline.png" alt="Прыжки в воду"> Прыжки в воду</a>
+						<a href="/services/vodnye_vidy_sporta/sinkhronnoe_plavanie/"><img src="./assets/synchronized-swimming.png" alt="Синхронное плавание"> Синхронное плавание</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slider-navigation">
+			<button class="prev-button"><img src="./assets/arrow-left.png" alt="Предыдущий"></button>
+			<button class="next-button"><img src="./assets/arrow-right.png" alt="Следующий"></button>
+		</div>
+		<div class="fixed-slider-controls">
+			<button data-slide="0"><img src="./assets/hot-drink.png" alt="Кофе">Дополнительные услуги</button>
+			<button data-slide="1"><img src="./assets/fitness.png" alt="Кофе">Услуги физической культуры</button>
+			<button data-slide="2"><img src="./assets/pool.png" alt="Кофе">Водные виды спорта</button>
+		</div>
+	</div>
+
+
+	
+	<div id="content">
+		<div class="sliders-container">
+			<div class="events-slider-wrapper">
+				<div class="slider-header">
+					<h2><a href="./events.html">События</a></h2>
+					<div class="swiper-buttons">
+						<div class="swiper-button-prev events-button-prev"></div>
+						<div class="swiper-button-next events-button-next"></div>
+					</div>
+				</div>
+				<div class="swiper events-swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="event-item-slide">
+								<a href="/about/events/detail.php?ELEMENT_CODE=sportivnye_meropriyatiya" class="event-image">
+									<img src="./assets/sportevents.jpg" alt="Спортивные мероприятия">
+								</a>
+								<div class="event-details">
+									<a href="/about/events/detail.php?ELEMENT_CODE=sportivnye_meropriyatiya" class="event-title">Спортивные мероприятия</a>
+									<div class="event-date">26 Апреля 2025</div>
+									<div class="event-note">Обращаем внимание!</div>
+								</div>
+								<div class="event-actions">
+									<a href="/about/events/detail.php?ELEMENT_CODE=sportivnye_meropriyatiya" class="button">Подробно</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="event-item-slide">
+								<a href="/about/events/detail.php?ELEMENT_CODE=izmenenie_v_rezhime_raboty" class="event-image">
+									<img src="./assets/2.jpg" alt="Изменение в режиме работы">
+								</a>
+								<div class="event-details">
+									<a href="/about/events/detail.php?ELEMENT_CODE=izmenenie_v_rezhime_raboty" class="event-title">Изменение в режиме работы</a>
+									<div class="event-date">25 Апреля 2025</div>
+									<div class="event-note">Обращаем внимание!</div>
+								</div>
+								<div class="event-actions">
+									<a href="/about/events/detail.php?ELEMENT_CODE=izmenenie_v_rezhime_raboty" class="button">Подробно</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="event-item-slide">
+								<a href="/about/events/detail.php?ELEMENT_CODE=zasedanie_komissii" class="event-image">
+									<img src="./assets/3.jpg" alt="Заседание комиссии">
+								</a>
+								<div class="event-details">
+									<a href="/about/events/detail.php?ELEMENT_CODE=zasedanie_komissii" class="event-title">Заседание комиссии</a>
+									<div class="event-date">02 Мая 2025</div>
+									<div class="event-note">Обращаем внимание!</div>
+								</div>
+								<div class="event-actions">
+									<a href="/about/events/detail.php?ELEMENT_CODE=zasedanie_komissii" class="button">Подробно</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="event-item-slide">
+								<a href="/about/events/detail.php?ELEMENT_CODE=rezhim_raboty_tsentra_1_2_9_maya" class="event-image">
+									<img src="./assets/4.jpg" alt="Режим работы центра 1, 2, 9 мая">
+								</a>
+								<div class="event-details">
+									<a href="/about/events/detail.php?ELEMENT_CODE=rezhim_raboty_tsentra_1_2_9_maya" class="event-title">Режим работы центра 1, 2, 9 мая</a>
+									<div class="event-date">01 Мая 2025</div>
+									<div class="event-note">Обращаем внимание!</div>
+								</div>
+								<div class="event-actions">
+									<a href="/about/events/detail.php?ELEMENT_CODE=rezhim_raboty_tsentra_1_2_9_maya" class="button">Подробно</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="event-item-slide">
+								<a href="/about/events/detail.php?ELEMENT_CODE=brest_plyvet" class="event-image">
+									<img src="./assets/5.jpg" alt="Брест плывет">
+								</a>
+								<div class="event-details">
+									<a href="/about/events/detail.php?ELEMENT_CODE=brest_plyvet" class="event-title">"Брест плывет"</a>
+									<div class="event-date">25 Мая 2025</div>
+									<div class="event-note">Спортивно-массовое мероприятие "Брест плывет"</div>
+								</div>
+								<div class="event-actions">
+									<a href="/about/events/detail.php?ELEMENT_CODE=brest_plyvet" class="button">Подробно</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="event-item-slide">
+								<a href="/about/events/detail.php?ELEMENT_CODE=otkrytyy_turnir_flamingo_po_sinkhronnomu_plavaniyu_2025" class="event-image">
+									<img src="./assets/6.jpg" alt="Открытый турнир Фламинго по синхронному плаванию 2025">
+								</a>
+								<div class="event-details">
+									<a href="/about/events/detail.php?ELEMENT_CODE=otkrytyy_turnir_flamingo_po_sinkhronnomu_plavaniyu_2025" class="event-title">Открытый турнир "Фламинго" по синхронному плаванию 2025</a>
+									<div class="event-date">24 Апреля 2025</div>
+								</div>
+								<div class="event-actions">
+									<a href="/about/events/detail.php?ELEMENT_CODE=otkrytyy_turnir_flamingo_po_sinkhronnomu_plavaniyu_2025" class="button">Подробно</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="event-item-slide">
+								<a href="/about/events/detail.php?ELEMENT_CODE=rezhim_raboty_tsentra_20_i_29_aprelya" class="event-image">
+									<img src="./assets/7.jpg" alt="Режим работы Центра 20 и 29 апреля">
+								</a>
+								<div class="event-details">
+									<a href="/about/events/detail.php?ELEMENT_CODE=rezhim_raboty_tsentra_20_i_29_aprelya" class="event-title">Режим работы Центра 20 и 29 апреля</a>
+									<div class="event-date">20 Апреля 2025</div>
+									<div class="event-note">Обращаем внимание!</div>
+								</div>
+								<div class="event-actions">
+									<a href="/about/events/detail.php?ELEMENT_CODE=rezhim_raboty_tsentra_20_i_29_aprelya" class="button">Подробно</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="event-item-slide">
+								<a href="/about/events/detail.php?ELEMENT_CODE=rezhim_raboty_tsentra_s_1_fevralya" class="event-image">
+									<img src="./assets/8.jpg" alt="Режим работы Центра с 1 февраля">
+								</a>
+								<div class="event-details">
+									<a href="/about/events/detail.php?ELEMENT_CODE=rezhim_raboty_tsentra_s_1_fevralya" class="event-title">Режим работы Центра с 1 февраля</a>
+									<div class="event-date">27 Января 2025</div>
+									<div class="event-note">Обращаем внимание!</div>
+								</div>
+								<div class="event-actions">
+									<a href="/about/events/detail.php?ELEMENT_CODE=rezhim_raboty_tsentra_s_1_fevralya" class="button">Подробно</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination events-pagination"></div>
+				</div>
+			</div>
+	
+			<div class="actions-slider-wrapper">
+				<div class="slider-header">
+					<h2>Акции</h2>
+					<div class="swiper-buttons">
+						<div class="swiper-button-prev actions-button-prev"></div>
+						<div class="swiper-button-next actions-button-next"></div>
+					</div>
+				</div>
+				<div class="swiper actions-swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="action-item-slide">
+								<a href="#" class="action-image">
+									<img src="./assets/9.jpg" alt="Акция 1">
+								</a>
+								<div class="action-details">
+									<a href="#" class="action-title">Акция Майские праздники</a>
+									<div class="action-note">Обращаем внимание!</div>
+								</div>
+								<div class="action-actions">
+									<a href="#" class="button">Подробно</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination actions-pagination"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+				
+	
+	<div class="main-info-block">
+		<div class="main-mini-slider__slide-container">
+			<button class="slider-prev"><img src="./assets/right-button-arrow.png"></button>
+			<button class="slider-next"><img src="./assets/right-button-arrow.png"></button>
+			<div class="main-mini-slider__slide active" data-slide="0" style="background-image: url('./assets/4_4.png');">
+				<div class="slide-content right slide-one-text">
+					<div class="slide-one-textl" style="text-align: center;">Государственная символика</div>
+				</div>
+			</div>
+			<div class="main-mini-slider__slide" data-slide="1" style="background-image: url('./assets/1_1.png');">
+				<div class="slide-content left slide-two-text">
+					<div class="slide-one-text-two" style="text-align: center;">Интернет-ресурсы</div>
+				</div>
+			</div>
+			<div class="main-mini-slider__slide" data-slide="2" style="background-image: url('./assets/2_2.jpg');">
+				<div class="slide-content center slide-three-text">
+					<p class="slide-one-text-third" style="text-align: center;">Спешите! Спецпредложение для организаций!</p><p class="slide-one-text-thirdl" style="text-align: center;">Предоставление дорожки в бассейне 50 м. на сеансы 06:30 и 20:45 в будни и выходные по специальной цене – 52 руб. 00 коп.!</p>
+				</div>
+			</div>
+			<div class="main-mini-slider__slide" data-slide="3" style="background-image: url('./assets/3_3.jpg');">
+				<div class="slide-content right slide-four-text">
+					<p class="slide-one-text-four" style="text-align: center;">ПРЕДЛАГАЕМ:</p><p class="slide-one-text-fourl" style="text-align: center;">детские трусики-подгузники для плавания.</p>
+					<p class="slide-one-text-fourll" style="text-align: center;">Приобрести их вы можете в нашем магазине спортивных товаров.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-mini-slider--navigation">
+			<div class="slider-pagination">
+				<button class="pagination-bullet active" data-slide="0"></button>
+				<button class="pagination-bullet" data-slide="1"></button>
+				<button class="pagination-bullet" data-slide="2"></button>
+				<button class="pagination-bullet" data-slide="3"></button>
+			</div>
+		</div>
+	</div>
+		
+
+	<div class="main-info-blockk">
+		<div class="main-info-block__maskk">
+			<div class="main-info-block__containerr">
+				<div class="main-info-block__title">О центре</div>
+				<p class="main-info-block__text">
+					В октябре 2010 года с участием Президента Республики Беларусь А.Г. Лукашенко был торжественно открыт Дворец водных видов спорта, аналогов которому на сегодняшний день нет в республике. Дворец предназначен для проведения соревнований различного ранга, включая международные, профессионального занятия спортом, активного и полезного для здоровья отдыха.<br>
+					<br>
+					Наш Дворец выделяется своей современностью, многофункциональностью и комфортом. Благодаря нашему сайту у меня есть прекрасная возможность пригласить Вас в наш Дворец. Приглашаем Вас семьями, с друзьями, у нас Вы найдете занятия с учетом интересов каждого.<br>
+					<br>
+					В нашем Дворце работают активные и увлеченные люди, отличные специалисты, профессионалы своего дела. Коллектив Дворца делает все для Вашего комфорта и прогресса в выбранном виде спорта и активных оздоровительных занятий.<br>
+					<br>
+					Дворец водных видов спорта – первая ступень к достижению высоких результатов. Быть спортивным, здоровым, деятельным – это по-Брестски!
+				</p>
+				<a href="/about/" class="main-info-block__buttonn">Подробно</a>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div id="footer">
+    <div class="footer-container">
+        <div class="footer-block">
+            <div class="footer-block__title"><img src="./assets/location.png" alt="Контакты" class="footer-block__iconl"> <span class="span-text">Контакты</span></div>
+            <div class="footer-block__text">
+                <div>224023 г.Брест, ул. Московская 147</div>
+                <div>Администраторы:<br>Тел.: 32-20-24 (Холл)<br>Тел.: 32-20-25 (Бассейн 25м)<br>Тел.: 32-20-50 (Бассейн 50м)</div>
+                <br>
+                <div>Приемная:</div>
+                <div>Тел./факс: (+375 162) 32-20-00</div>
+                <div>E-mail: <a href="mailto:secretar@brest-dvvs.by" class="no-link-style">secretar@brest-dvvs.by</a></div>
+                
+                <!-- Добавленные иконки соцсетей -->
+                <div class="social-icons" style="margin-top: 15px; display: flex; gap: 25px; margin-left: 10px;">
+                    <a href="https://vk.com/dvvsbrest" target="_blank">
+                        <img src="./assets/vk.png" alt="ВКонтакте" style="width: 30px; height: 30px; display: block;">
+                    </a>
+                    <a href="https://www.instagram.com/dvvsbrest/" target="_blank">
+                        <img src="./assets/instagram.png" alt="Instagram" style="width: 30px; height: 30px; display: block;">
+                    </a>
+                    <a href="https://www.facebook.com/dvvsbrest/" target="_blank">
+                        <img src="./assets/facebook.png" alt="Facebook" style="width: 30px; height: 30px; display: block;">
+                    </a>
+                    <a href="https://www.youtube.com/@dvvsbrest1" target="_blank">
+                        <img src="./assets/youtube.png" alt="YouTube" style="width: 30px; height: 30px; display: block;">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-block">
+            <div class="footer-block__title footer-block-icon-info"><img src="./assets/info.png" alt="О центре" class="footer-block__icon"><span>О центре</span></div>
+            <a class="footer-block__link" href="/about/window/">Одно окно</a>
+            <a class="footer-block__link" href="/about/events/">События</a>
+            <a class="footer-block__link" href="/about/promotions/">Акции</a>
+            <a class="footer-block__link" href="/about/fyi/">Правила посещения</a>
+            <a class="footer-block__link" href="/about/vacancies/">Вакансии</a>
+            <a class="footer-block__link" href="/about/faq/">Часто задаваемые вопросы</a>
+            <a class="footer-block__link" href="/upload/Политика персональные данные.pdf">Политика в отношении персональных данных</a>
+            <a class="footer-block__link" href="http://качество-услуг.бел/organization/11378/questionnaire">Портал рейтинговой оценки</a>
+            <a class="footer-block__link" href="/about/union/">Профсоюз</a>
+            <a class="footer-block__link" href="/upload/Комиссия по коррупции.pdf">План работы комиссии по противодействию коррупции</a>
+        </div>
+        <div class="footer-block">
+            <div class="footer-block__title footer-block-icon-flag"><img src="./assets/report.png" alt="Деятельность" class="footer-block__icon"><span>Деятельность</span></div>
+            <a class="footer-block__link" href="/services/uslugi_fizicheskoy_kultury/">Услуги физической культуры</a>
+            <a class="footer-block__link" href="/services/vodnye_vidy_sporta/">Спорт</a>
+            <a class="footer-block__link" href="/services/dopolnitelnye_uslugi/">Услуги "Центра"</a>
+        </div>
+        <div class="footer-block footer-block--clients">
+            <div class="footer-block__title footer-block-icon-keys"><img src="./assets/briefcase.png" alt="Клиентам" class="footer-block__icon"><span>Клиентам</span></div>
+            <a class="footer-block__link" href="/for_legal_entities/">Информация</a>
+            <a class="footer-block__link" href="/for_legal_entities/applications/">Заявки</a>
+            <a class="footer-block__link" href="/for_legal_entities/treaty/">Договор</a>
+            <a class="footer-block__link" href="https://noc.by/">Спорт в Беларуси</a>
+            <a class="footer-block__link" href="/for_legal_entities/zoj/">Пропаганда ЗОЖ</a>
+            <a class="footer-block__link" href="/for_legal_entities/Anketa/">Анкета резервного списка</a>
+            <a class="footer-block__link" href="/for_legal_entities/sbory/">Заявка на участие в сборах</a>
+            <a class="footer-block__link" href="https://www.zoncgie.brest.by/">Всё о COVID 19</a>
+            <a class="footer-block__link" href="/for_legal_entities/doping/">Антидопинговое образование</a>
+            <a class="footer-block__link" href="https://молодежь.бел/">молодежь.бел</a>
+        </div>
+    </div>
+    <div class="progg_by"><p>Разработка сайта: Петровская А.О., ЭМ-4, БрГТУ 2025  <a class="footer-block__link" href="https://github.com/em000412/dvvs">GitHub</a></p></div>
+</div>
+</body></html>

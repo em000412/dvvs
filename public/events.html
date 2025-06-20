@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="events.css">
+    <script src="slider-events.js"></script>
+  
+</head>
+
+<body>
+    <div id="header">
+        <div class="header-container">
+            <div class="header-container__logo">
+                <a class="header-container__logo__link" href="#">
+                    <img src="./assets/logo.png" alt="Логотип" class="logomain">
+                </a>
+                <a href="#" class="header-container__logo__text">
+                    ГСУСУ «Брестский областной центр олимпийского резерва по водным видам спорта»
+                </a>
+            </div>
+            <div class="header-container__controls">
+                <div class="mobile-search-wrapper">
+                    <button class="search-icon-button">
+                        <span class="search-icon"></span>
+                    </button>
+                    <form action="/search" method="GET" class="header-container__search__form">
+                        <span class="search-icon search-icon-inner"></span>
+                        <input
+                            type="text"
+                            name="q"
+                            class="header-container__search__input"
+                            placeholder="Поиск"
+                        />
+                        <button type="submit" class="header-container__search__submit">
+                            <span class="search-icon close-icon"></span>
+                        </button>
+                    </form>
+                </div>
+                <button class="menu-icon-button">
+                    <span class="menu-icon"></span>
+                </button>
+            </div>
+            <div class="header-container__search">
+                <form action="/search" method="GET" class="header-container__search__form--desktop">
+                    <input
+                        type="text"
+                        name="q"
+                        class="header-container__search__input"
+                        placeholder="Поиск"
+                    />
+                    <button type="submit" class="header-container__search__submit">
+                        <span class="search-icon"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="nav" class="mobile-menu" bis_skin_checked="1">
+        <div class="mobile-menu__header" bis_skin_checked="1">
+            <button class="mobile-menu__close-button">
+                <span class="mobile-menu__close-icon"></span>
+            </button>
+        </div>
+        <div class="nav-container" bis_skin_checked="1">
+            <ul class="nav-container__block">
+                <li class="nav-container__block__box activ"></li>
+                <li class="nav-container__block__box"><a class="nav-container__block__link" href="#" bis_skin_checked="1">Главная</a></li>
+                <li class="nav-container__block__box"><a class="nav-container__block__link" href="rules.html" bis_skin_checked="1">Правила</a></li>
+                <li class="nav-container__block__box"><a class="nav-container__block__link" href="/about/" bis_skin_checked="1">О центре</a></li>
+                <li class="nav-container__block__box"><a class="nav-container__block__link" href="/sched/index.php" bis_skin_checked="1">Расписание</a></li>
+                <li class="nav-container__block__box"><a class="nav-container__block__link" href="/contacts/" bis_skin_checked="1">Контакты</a></li>
+                <li class="nav-container__block__box"><a class="nav-container__block__link" href="/sched/price.php" bis_skin_checked="1">Прейскурант</a></li>
+                <li class="nav-container__block__box"><a class="nav-container__block__link" href="http://brest-dvvs.by/services/dopolnitelnye_uslugi/detail.php?SECTION_CODE=Hotel&ELEMENT_CODE=gostinitsa" bis_skin_checked="1">Гостиница</a></li>
+                <li class="nav-container__block__box"><a class="nav-container__block__link" href="http://brest-dvvs.by/services/uslugi_fizicheskoy_kultury/uchebnotrenirovochnye_sbory/" bis_skin_checked="1">УТС</a></li>
+                <li class="nav-container__block__box"><a class="nav-container__block__link" href="http://brest-dvvs.by/zapis/" bis_skin_checked="1">Набор 2024</a></li>
+            </ul>
+            <div class="clear" bis_skin_checked="1"></div>
+        </div>
+        <div class="nav-bottom-shadow" bis_skin_checked="1"></div>
+    </div>
+
+    <div id="content">
+        <h2 class="content-title content-title-min-bottom">События</h2>
+        <div class="all-events">
+          <div class="event-item">
+            <a href="/about/events/detail.php?ELEMENT_CODE=sportivnye_meropriyatiya" class="event-image">
+              <img src="./assets/sportevents.jpg" alt="Спортивные мероприятия">
+            </a>
+            <div class="event-details">
+              <a href="/about/events/detail.php?ELEMENT_CODE=sportivnye_meropriyatiya" class="event-title">Спортивные мероприятия</a>
+              <div class="event-date">26 Апреля 2025</div>
+              <div class="event-note">Обращаем внимание!</div>
+            </div>
+            <div class="event-actions">
+              <a href="/about/events/detail.php?ELEMENT_CODE=sportivnye_meropriyatiya" class="button">Подробно</a>
+            </div>
+          </div>
+          <div class="event-item">
+            <a href="/about/events/detail.php?ELEMENT_CODE=izmenenie_v_rezhime_raboty" class="event-image">
+              <img src="./assets/2.jpg" alt="Изменение в режиме работы">
+            </a>
+            <div class="event-details">
+              <a href="/about/events/detail.php?ELEMENT_CODE=izmenenie_v_rezhime_raboty" class="event-title">Изменение в режиме работы</a>
+              <div class="event-date">25 Апреля 2025</div>
+              <div class="event-note">Обращаем внимание!</div>
+            </div>
+            <div class="event-actions">
+              <a href="/about/events/detail.php?ELEMENT_CODE=izmenenie_v_rezhime_raboty" class="button">Подробно</a>
+            </div>
+          </div>
+          <div class="event-item hidden">
+            <a href="/about/events/detail.php?ELEMENT_CODE=zasedanie_komissii" class="event-image">
+              <img src="./assets/3.jpg" alt="Заседание комиссии">
+            </a>
+            <div class="event-details">
+              <a href="/about/events/detail.php?ELEMENT_CODE=zasedanie_komissii" class="event-title">Заседание комиссии</a>
+              <div class="event-date">02 Мая 2025</div>
+              <div class="event-note">Обращаем внимание!</div>
+            </div>
+            <div class="event-actions">
+              <a href="/about/events/detail.php?ELEMENT_CODE=zasedanie_komissii" class="button">Подробно</a>
+            </div>
+          </div>
+          <div class="event-item hidden">
+            <a href="/about/events/detail.php?ELEMENT_CODE=rezhim_raboty_tsentra_1_2_9_maya" class="event-image">
+              <img src="./assets/4.jpg" alt="Режим работы центра 1, 2, 9 мая">
+            </a>
+            <div class="event-details">
+              <a href="/about/events/detail.php?ELEMENT_CODE=rezhim_raboty_tsentra_1_2_9_maya" class="event-title">Режим работы центра 1, 2, 9 мая</a>
+              <div class="event-date">01 Мая 2025</div>
+              <div class="event-note">Обращаем внимание!</div>
+            </div>
+            <div class="event-actions">
+              <a href="/about/events/detail.php?ELEMENT_CODE=rezhim_raboty_tsentra_1_2_9_maya" class="button">Подробно</a>
+            </div>
+          </div>
+          <div class="event-item hidden">
+            <a href="/about/events/detail.php?ELEMENT_CODE=brest_plyvet" class="event-image">
+              <img src="./assets/5.jpg" alt="Брест плывет">
+            </a>
+            <div class="event-details">
+              <a href="/about/events/detail.php?ELEMENT_CODE=brest_plyvet" class="event-title">"Брест плывет"</a>
+              <div class="event-date">25 Мая 2025</div>
+              <div class="event-note">Спортивно-массовое мероприятие "Брест плывет"</div>
+            </div>
+            <div class="event-actions">
+              <a href="/about/events/detail.php?ELEMENT_CODE=brest_plyvet" class="button">Подробно</a>
+            </div>
+          </div>
+          <div class="event-item hidden">
+            <a href="/about/events/detail.php?ELEMENT_CODE=otkrytyy_turnir_flamingo_po_sinkhronnomu_plavaniyu_2025" class="event-image">
+              <img src="./assets/6.jpg" alt="Открытый турнир Фламинго по синхронному плаванию 2025">
+            </a>
+            <div class="event-details">
+              <a href="/about/events/detail.php?ELEMENT_CODE=otkrytyy_turnir_flamingo_po_sinkhronnomu_plavaniyu_2025" class="event-title">Открытый турнир "Фламинго" по синхронному плаванию 2025</a>
+              <div class="event-date">24 Апреля 2025</div>
+            </div>
+            <div class="event-actions">
+              <a href="/about/events/detail.php?ELEMENT_CODE=otkrytyy_turnir_flamingo_po_sinkhronnomu_plavaniyu_2025" class="button">Подробно</a>
+            </div>
+          </div>
+          <div class="event-item hidden">
+            <a href="/about/events/detail.php?ELEMENT_CODE=rezhim_raboty_tsentra_20_i_29_aprelya" class="event-image">
+              <img src="./assets/7.jpg" alt="Режим работы Центра 20 и 29 апреля">
+            </a>
+            <div class="event-details">
+              <a href="/about/events/detail.php?ELEMENT_CODE=rezhim_raboty_tsentra_20_i_29_aprelya" class="event-title">Режим работы Центра 20 и 29 апреля</a>
+              <div class="event-date">20 Апреля 2025</div>
+              <div class="event-note">Обращаем внимание!</div>
+            </div>
+            <div class="event-actions">
+              <a href="/about/events/detail.php?ELEMENT_CODE=rezhim_raboty_tsentra_20_i_29_aprelya" class="button">Подробно</a>
+            </div>
+          </div>
+          <div class="event-item hidden">
+            <a href="/about/events/detail.php?ELEMENT_CODE=rezhim_raboty_tsentra_s_1_fevralya" class="event-image">
+              <img src="./assets/8.jpg" alt="Режим работы Центра с 1 февраля">
+            </a>
+            <div class="event-details">
+              <a href="/about/events/detail.php?ELEMENT_CODE=rezhim_raboty_tsentra_s_1_fevralya" class="event-title">Режим работы Центра с 1 февраля</a>
+              <div class="event-date">27 Января 2025</div>
+              <div class="event-note">Обращаем внимание!</div>
+            </div>
+            <div class="event-actions">
+              <a href="/about/events/detail.php?ELEMENT_CODE=rezhim_raboty_tsentra_s_1_fevralya" class="button">Подробно</a>
+            </div>
+          </div>
+        </div>
+        <div class="load-more-container">
+          <button id="load-more" class="button">Показать ещё</button>
+        </div>
+      </div>
+</body>
